@@ -1,0 +1,10 @@
+insert into item_table (phone_model, phone_release_year, phone_colour, phone_company) values ('Domainer', 1999, 'Fuscia', 'Mudo');
+insert into item_table (phone_model, phone_release_year, phone_colour, phone_company) values ('Tin', 2007, 'Pink', 'Tambee');
+insert into item_table (phone_model, phone_release_year, phone_colour, phone_company) values ('Kanlam', 2012, 'Pink', 'Jaxworks');
+insert into item_table (phone_model, phone_release_year, phone_colour, phone_company) values ('Bigtax', 2006, 'Violet', 'Mynte');
+insert into item_table (phone_model, phone_release_year, phone_colour, phone_company) values ('Subin', 2001, 'Teal', 'Jaxnation');
+insert into item_table (phone_model, phone_release_year, phone_colour, phone_company) values ('Span', 1996, 'Puce', 'Brainlounge');
+insert into item_table (phone_model, phone_release_year, phone_colour, phone_company) values ('Solarbreeze', 2000, 'Crimson', 'Zava');
+insert into item_table (phone_model, phone_release_year, phone_colour, phone_company) values ('Temp', 2008, 'Goldenrod', 'Gabtype');
+insert into item_table (phone_model, phone_release_year, phone_colour, phone_company) values ('Asoka', 2008, 'Maroon', 'Tazzy');
+insert into item_table (phone_model, phone_release_year, phone_colour, phone_company) values ('Sonsing', 2012, 'Green', 'Devcast');

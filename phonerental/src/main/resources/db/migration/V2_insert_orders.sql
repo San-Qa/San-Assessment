@@ -1,0 +1,10 @@
+insert into order_table (cust_id, phone_id, order_date, return_date, phone_returned, rental_cost) values (2, 1, '2021/04/10', '2021/01/06', false, 533.22);
+insert into order_table (cust_id, phone_id, order_date, return_date, phone_returned, rental_cost) values (3, 2, '2020/11/04', '2020/06/12', true, 582.59);
+insert into order_table (cust_id, phone_id, order_date, return_date, phone_returned, rental_cost) values (4, 3, '2021/01/21', '2020/07/27', true, 577.56);
+insert into order_table (cust_id, phone_id, order_date, return_date, phone_returned, rental_cost) values (5, 4, '2020/11/25', '2020/09/22', true, 62.34);
+insert into order_table (cust_id, phone_id, order_date, return_date, phone_returned, rental_cost) values (6, 5, '2020/05/24', '2020/11/08', true, 696.12);
+insert into order_table (cust_id, phone_id, order_date, return_date, phone_returned, rental_cost) values (7, 6, '2020/08/14', '2020/06/15', false, 60.84);
+insert into order_table (cust_id, phone_id, order_date, return_date, phone_returned, rental_cost) values (8, 7, '2020/12/13', '2020/12/24', false, 149.19);
+insert into order_table (cust_id, phone_id, order_date, return_date, phone_returned, rental_cost) values (9, 8, '2020/10/31', '2021/01/22', false, 416.3);
+insert into order_table (cust_id, phone_id, order_date, return_date, phone_returned, rental_cost) values (10, 9, '2020/09/22', '2020/06/20', true, 109.44);
+insert into order_table (cust_id, phone_id, order_date, return_date, phone_returned, rental_cost) values (11, 10, '2020/07/16', '2020/10/20', true, 717.67);
