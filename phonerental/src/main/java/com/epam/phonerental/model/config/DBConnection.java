@@ -18,12 +18,12 @@ private static final String PROPERTIES_DB_FILE = "src/main/resources/db/dbconnec
 private static final String URL = "jdbcUrl";
 private static final String USER = "db.username";
 private static final String PASSWORD = "db.password";
-private static final String DRIVER = "driverClassName";
+//private static final String DRIVER = "driverClassName";
 
 private String dataBaseUrl = "";
 private String databaseUser = "";
 private String databasePassword = "";
-private String databaseDriver = "";
+//private String databaseDriver = "";
 
 public DBConnection() {
 	Properties properties = PropertiesReader.getProperties(PROPERTIES_DB_FILE);
@@ -31,20 +31,20 @@ public DBConnection() {
 	dataBaseUrl = properties.getProperty(URL);
 	databaseUser = properties.getProperty(USER);
 	databasePassword = properties.getProperty(PASSWORD);
-	databaseDriver = properties.getProperty(DRIVER);
+	//databaseDriver = properties.getProperty(DRIVER);
 }
 
 public Connection getConnection() {
 	
 	try {
-		Class.forName(databaseDriver);
-		
-	return DriverManager.getConnection(dataBaseUrl, databaseUser, databasePassword);	
+		Connection connection = DriverManager.getConnection(dataBaseUrl, databaseUser, databasePassword);
+		LOGGER.info("successfully connected to database" + dataBaseUrl);
+		return connection; 	
 	}catch (SQLException e) {
 		LOGGER.error("Unable to connect to database" + dataBaseUrl +" " + e);
-	} catch (ClassNotFoundException e) {
-		LOGGER.error("Unable to find to database driver" + dataBaseUrl +" " + e);
+	throw new RuntimeException("Unable to connect to database" + dataBaseUrl);
 	}
-	return null;
-	}
+}
+
+
 }
